@@ -1,0 +1,17 @@
+
+entity Produto {
+	nome String
+}
+
+entity Fabricante {
+	nome String
+}
+
+relationship ManyToOne {
+    Produto{fabricante} to Fabricante{produtos}
+}
+
+paginate * with pagination
+dto * with mapstruct
+service all with serviceImpl
+
