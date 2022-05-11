@@ -1,0 +1,27 @@
+{
+  "applications": "*",
+  "changelogDate": "20220511231053",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "fabricante",
+  "fields": [
+    {
+      "fieldName": "nome",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Fabricante",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "produto",
+      "otherEntityRelationshipName": "fabricante",
+      "relationshipName": "produtos",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}
